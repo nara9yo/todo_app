@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos App</title>
+    <!-- Font Awesome CDN 추가 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="app">
+        <header>
+          <h1>Todos App</h1>
+          <!-- 원형 아이콘 버튼으로 보완 -->
+          <button
+            id="create-btn"
+            title="새로운 Todo 추가하기"
+            class="circle-btn"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </header>
+        <!-- 검색 입력창 추가 -->
+        <div class="search-box">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="검색어를 입력하세요"
+          />
+        </div>
+        <!-- 체크된 항목 일괄 삭제 버튼 추가 -->
+        <button id="remove-checked-btn" class="hide">체크된 항목 삭제</button>
+        <div class="todo-list" id="list"></div>
+      </div>
+    </main>
+    <script src="common/script.js"></script>
+  </body>
+</html>
